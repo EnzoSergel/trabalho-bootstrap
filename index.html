@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <title>Bootstrap - Scrollspy e Offcanvas</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<!--
+    SCROLLSPY
+    data-bs-spy="scroll" = ativa o Scrollspy
+    data-bs-target="#menu" = indica o menu que será atualizado
+-->
+
+<body data-bs-spy="scroll" data-bs-target="#menu">
+
+
+    <!-- MENU -->
+
+    <nav id="menu" class="navbar navbar-dark bg-dark fixed-top">
+
+        <div class="container">
+
+            <a class="navbar-brand" href="#">
+                Bootstrap
+            </a>
+
+            <div class="navbar-nav">
+
+                <a class="nav-link" href="#scrollspy">
+                    Scrollspy
+                </a>
+
+                <a class="nav-link" href="#offcanvas">
+                    Offcanvas
+                </a>
+
+            </div>
+
+        </div>
+
+    </nav>
+
+
+    <!-- SCROLLSPY -->
+
+    <div id="scrollspy" class="container">
+
+        <h1>Scrollspy</h1>
+
+        <p>
+            O Scrollspy destaca no menu a seção
+            que está sendo visualizada.
+        </p>
+
+        <div class="alert alert-info">
+
+            Role a página para testar o Scrollspy.
+
+        </div>
+
+    </div>
+
+
+    <!-- OFFCANVAS -->
+
+    <div id="offcanvas" class="container">
+
+        <h1>Offcanvas</h1>
+
+        <p>
+            O Bootstrap permite colocar o Offcanvas
+            em diferentes posições.
+        </p>
+
+
+        <!-- ESQUERDA -->
+
+        <!--
+            offcanvas-start = abre pela esquerda
+        -->
+
+        <button
+            class="btn btn-primary"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#esquerda">
+
+            Esquerda
+
+        </button>
+
+
+        <!-- DIREITA -->
+
+        <!--
+            offcanvas-end = abre pela direita
+        -->
+
+        <button
+            class="btn btn-success"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#direita">
+
+            Direita
+
+        </button>
+
+
+        <!-- CIMA -->
+
+        <!--
+            offcanvas-top = abre pela parte de cima
+        -->
+
+        <button
+            class="btn btn-warning"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#cima">
+
+            Cima
+
+        </button>
+
+
+        <!-- BAIXO -->
+
+        <!--
+            offcanvas-bottom = abre pela parte de baixo
+        -->
+
+        <button
+            class="btn btn-danger"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#baixo">
+
+            Baixo
+
+        </button>
+
+    </div>
+
+
+    <!-- OFFCANVAS ESQUERDA -->
+
+    <div class="offcanvas offcanvas-start" id="esquerda">
+
+        <div class="offcanvas-header">
+
+            <h5 class="offcanvas-title">
+                Esquerda
+            </h5>
+
+            <button
+                class="btn-close"
+                data-bs-dismiss="offcanvas">
+            </button>
+
+        </div>
+
+        <div class="offcanvas-body">
+
+            <p>
+                Este painel aparece pela esquerda.
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <!-- OFFCANVAS DIREITA -->
+
+    <div class="offcanvas offcanvas-end" id="direita">
+
+        <div class="offcanvas-header">
+
+            <h5 class="offcanvas-title">
+                Direita
+            </h5>
+
+            <button
+                class="btn-close"
+                data-bs-dismiss="offcanvas">
+            </button>
+
+        </div>
+
+        <div class="offcanvas-body">
+
+            <p>
+                Este painel aparece pela direita.
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <!-- OFFCANVAS CIMA -->
+
+    <div class="offcanvas offcanvas-top" id="cima">
+
+        <div class="offcanvas-header">
+
+            <h5 class="offcanvas-title">
+                Cima
+            </h5>
+
+            <button
+                class="btn-close"
+                data-bs-dismiss="offcanvas">
+            </button>
+
+        </div>
+
+        <div class="offcanvas-body">
+
+            <p>
+                Este painel aparece pela parte de cima.
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <!-- OFFCANVAS BAIXO -->
+
+    <div class="offcanvas offcanvas-bottom" id="baixo">
+
+        <div class="offcanvas-header">
+
+            <h5 class="offcanvas-title">
+                Baixo
+            </h5>
+
+            <button
+                class="btn-close"
+                data-bs-dismiss="offcanvas">
+            </button>
+
+        </div>
+
+        <div class="offcanvas-body">
+
+            <p>
+                Este painel aparece pela parte de baixo.
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <!-- Bootstrap JavaScript -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>

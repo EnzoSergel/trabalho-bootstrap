@@ -1,0 +1,14 @@
+/* Espaço para o menu fixo */
+
+body {
+    padding-top: 70px;
+}
+
+
+/* Espaço entre as partes da página */
+
+#scrollspy,
+#offcanvas {
+    min-height: 500px;
+    padding-top: 50px;
+}
